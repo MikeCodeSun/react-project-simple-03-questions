@@ -278,7 +278,9 @@ main {
 
 .container {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  align-items: center;
   background-color: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
@@ -287,7 +289,6 @@ main {
 }
 
 .question {
-  width: 50vw;
   background-color: var(--backgroundColor);
   margin-bottom: 1rem;
   box-shadow: var(--shadow-2);
@@ -301,5 +302,12 @@ main {
 
 .question-title {
   margin-bottom: 0;
-  font-size: 1.5rem;
+  line-height: 1;
+  font-size: 1rem;
+}
+
+@media (min-width: 778px) {
+  .container {
+    flex-direction: row;
+  }
 }

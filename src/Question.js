@@ -6,7 +6,7 @@ export default function Question({ title, info }) {
   return (
     <div className="question">
       <header>
-        <h3 className="question-title">{title}</h3>
+        <h4 className="question-title">{title}</h4>
         <button onClick={() => setShow(!show)} className="btn">
           {show ? "-" : "+"}
         </button>
