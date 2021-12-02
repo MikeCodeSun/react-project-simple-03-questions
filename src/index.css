@@ -309,5 +309,6 @@ main {
 @media (min-width: 778px) {
   .container {
     flex-direction: row;
+    align-items: flex-start;
   }
 }
