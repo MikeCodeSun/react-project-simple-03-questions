@@ -273,17 +273,25 @@ main {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-color: var(--red-light);
 }
 
 .container {
+  display: flex;
+  justify-content: space-between;
   background-color: var(--white);
   border-radius: var(--borderRadius);
   box-shadow: var(--shadow-2);
   padding: 1rem 2rem;
+  width: 90vw;
 }
 
 .question {
-  width: 60vw;
+  width: 50vw;
+  background-color: var(--backgroundColor);
+  margin-bottom: 1rem;
+  box-shadow: var(--shadow-2);
+  border-radius: var(--borderRadius);
 }
 .question header {
   display: flex;
